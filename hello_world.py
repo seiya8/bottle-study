@@ -1,7 +1,9 @@
-from bottle import route, run
+from bottle import Bottle, run
 
-@route('/')
+app = Bottle()
+
+@app.route('/')
 def hello():
     return "Hello World!"
 
-run(host='localhost', port=8080, debug=True)
+run(app, host='localhost', port=8080, debug=True)
