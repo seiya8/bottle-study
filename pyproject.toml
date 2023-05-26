@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "bottle-study"
+version = "0.1.0"
+description = ""
+authors = ["seiya8 <seiya.sasa8@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bottle_study"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+bottle = "^0.12.25"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
